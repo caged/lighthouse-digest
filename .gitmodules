@@ -1,0 +1,4 @@
+
+[submodule "vendor/lighthouse-api"]
+	path = vendor/lighthouse-api
+	url = git://github.com/Caged/lighthouse-api.git
