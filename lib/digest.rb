@@ -1,6 +1,3 @@
-require '/Users/Caged/dev/git/lighthouse-api/lib/lighthouse'
-require 'actionmailer'
-
 # Use sendmail
 ActionMailer::Base.delivery_method = :sendmail
 
@@ -59,16 +56,4 @@ module Lighthouse
       body body_html
     end
   end
-end
-
-# Set basic Lighthouse info
-Lighthouse.account = "activereload"
-Lighthouse.token = "3cbb916a2ab680a6f07bcc3aff7a6a5bc22e5b4b"
-
-
-Lighthouse::Digest.new do |digest|
-  digest.project_id = 44
-  digest.from = "justin@encytemedia.com"
-  digest.query = "state:open updated:'three weeks ago - two weeks ago'"
-  digest.emails = "encytemedia@gmail.com, justin@activereload.net"
 end
